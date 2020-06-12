@@ -8,8 +8,8 @@ html {
   color: var(--color-text);
 
   --headerOne: calc(3.5rem + 5vw);
-  --headerTwo: calc(1.8rem + 1vw);
-  --headerThree: calc(3rem + 1vw);
+  --headerTwo: calc(2.5rem + 1vw);
+  --headerThree: calc(2.2rem + 1vw);
   --headerFour: calc(3.5rem + 1vw);
   --text: calc(1.2rem + 1vw);
   --bigText: calc(4rem + 1vw);
@@ -19,8 +19,21 @@ html {
   --color-secondary: #f88639;
   --color-secondary-dark: #db7633;
   --color-text: #c6e3e1;
-  --color-background-opacity: rgba(29, 179, 159, 0.774);
+  --color-background-opacity-green: rgba(29, 179, 159, 0.774);
+  --color-background-opacity-orange: #f88539e0;
   scroll-behavior: smooth;
+}
+body {
+  animation: opening 1s ease-in-out;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-shadow: 1px 1px black;
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  font-style: italic;
+  /* text-shadow: 1px 1px black; */
 }
 a {
   color: var(--color-text);
@@ -37,7 +50,7 @@ a {
   flex-direction: column;
 }
 .overlay-green {
-  background: var(--color-background-opacity);
+  background: var(--color-background-opacity-green);
 }
 .btn {
   padding: 1rem 2rem;
@@ -60,13 +73,72 @@ a {
   font-size: var(--headerOne);
   text-align: center;
 }
+.showcase-text {
+  animation: up 1s ease-in-out;
+  font-weight: 300;
+  /* transform: translateY(50%); */
+}
 /* .showcase-body,
 .showcase-title h1 {
   transform: translateY(-50%);
 } */
-.showcase-body .showcase-text {
-  font-size: var(--headerTwo);
+.showcase-body .showcase-statement {
+  font-size: var(--headerThree);
   padding: 0 1.5rem;
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+.about-title {
+  font-size: var(--headerTwo);
+}
+
+.about-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: url("../img/about-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-text > div {
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about-description {
+  padding: 1rem 2.5rem;
+  background: var(--color-background-opacity-orange) !important;
+  z-index: 100;
+  /* background: red !important; */
+}
+.about-description h3 {
+  font-size: var(--headerThree);
+}
+.about-description p {
+  font-size: var(--text);
+  /* padding: 1rem; */
+}
+/*******************************************
+    ANIMATIONS STYLES
+*******************************************/
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  from {
+    transform: translateY(25%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
