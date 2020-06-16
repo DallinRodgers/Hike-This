@@ -1,3 +1,7 @@
+/*******************************************
+    BASE STYLES
+*******************************************/
+
 * {
   padding: 0;
   margin: 0;
@@ -8,8 +12,8 @@ html {
   color: var(--color-text);
 
   --headerOne: calc(3.5rem + 5vw);
-  --headerTwo: calc(2.5rem + 1vw);
-  --headerThree: calc(2.2rem + 1vw);
+  --headerTwo: calc(3rem + 2.5vw);
+  --headerThree: calc(2rem + 1vw);
   --headerFour: calc(3.5rem + 1vw);
   --text: calc(1.2rem + 1vw);
   --bigText: calc(4rem + 1vw);
@@ -33,24 +37,37 @@ h2,
 h3 {
   font-weight: 300;
   font-style: italic;
-  /* text-shadow: 1px 1px black; */
+}
+h2 {
+  font-size: var(--headerTwo);
+}
+h3 {
+  display: inline-block;
+  font-size: var(--headerThree);
+  border-bottom: 3px solid var(--color-text);
 }
 a {
   color: var(--color-text);
   text-decoration: none;
 }
-#showcase {
-  min-height: 100vh;
-  background: url("./../img/showcase-bg.jpg") center / cover no-repeat;
-}
+/*******************************************
+    UTILITY STYLES
+*******************************************/
+
 .flex-col {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.flex-row {
+  display: flex;
+}
 .overlay-green {
   background: var(--color-background-opacity-green);
+}
+.bg-green {
+  background: var(--color-primary);
 }
 .btn {
   padding: 1rem 2rem;
@@ -65,6 +82,14 @@ a {
 .btn:active {
   transform: scale(1.1);
 }
+/*******************************************
+    SHOWCASE STYLES
+*******************************************/
+
+#showcase {
+  min-height: 100vh;
+  background: url("./../img/showcase-bg.jpg") center / cover no-repeat;
+}
 .showcase-content {
   min-height: 100vh;
   width: 100%;
@@ -76,22 +101,16 @@ a {
 .showcase-text {
   animation: up 1s ease-in-out;
   font-weight: 300;
-  /* transform: translateY(50%); */
 }
-/* .showcase-body,
-.showcase-title h1 {
-  transform: translateY(-50%);
-} */
 .showcase-body .showcase-statement {
   font-size: var(--headerThree);
   padding: 0 1.5rem;
   text-align: center;
   margin-bottom: 1.5rem;
 }
-
-.about-title {
-  font-size: var(--headerTwo);
-}
+/*******************************************
+    ABOUT STYLES
+*******************************************/
 
 .about-text {
   display: grid;
@@ -102,25 +121,48 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.about-text > div {
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .about-description {
   padding: 1rem 2.5rem;
   background: var(--color-background-opacity-orange) !important;
   z-index: 100;
-  /* background: red !important; */
-}
-.about-description h3 {
-  font-size: var(--headerThree);
 }
 .about-description p {
   font-size: var(--text);
-  /* padding: 1rem; */
 }
+
+/*******************************************
+    TRIPS STYLES
+*******************************************/
+.trip {
+  width: 100%;
+}
+
+.trip-gallery,
+.trip-info {
+  flex-basis: 50%;
+}
+.trip-info {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: var(--text);
+}
+.trip-description {
+  margin: 1rem 0;
+}
+.trip-description p {
+  padding: 1rem;
+}
+.gallery-MA {
+  background: url("./../img/mountain-adventure/moraine-lake-canada-2662086.jpg")
+    center / cover no-repeat;
+}
+.view-gallery {
+  font-size: var(--text);
+}
+.view-gallery:hover {
+  cursor: pointer;
+}
+
 /*******************************************
     ANIMATIONS STYLES
 *******************************************/
