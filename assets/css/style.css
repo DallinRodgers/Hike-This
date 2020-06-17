@@ -152,8 +152,20 @@ a {
 .trip-description p {
   padding: 1rem;
 }
+.trip-details,
+.trip-details > div {
+  margin: 1rem 0;
+}
 .gallery-MA {
   background: url("./../img/mountain-adventure/moraine-lake-canada-2662086.jpg")
+    center / cover no-repeat;
+}
+.gallery-WP {
+  background: url("./../img/water-paradise/scenic-view-of-waterfalls-1598073.jpg")
+    center / cover no-repeat;
+}
+.gallery-SE {
+  background: url("./../img/southern-escape/man-standing-on-arch-at-canyon-2440007.jpg")
     center / cover no-repeat;
 }
 .view-gallery {
