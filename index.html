@@ -284,14 +284,6 @@
                   </select>
                 </div>
                 <div class="flex-row">
-                  <label for="price">Price:</label>
-                  <input type="text" id="price" disabled />
-                </div>
-                <div class="flex-row">
-                  <label for="date">Date:</label>
-                  <input type="text" id="date" disabled />
-                </div>
-                <div class="flex-row">
                   <label for="group-size">Group Size:</label>
                   <select name="group-size" id="group-size">
                     <option value="">--Please choose an option--</option>
@@ -300,8 +292,16 @@
                     <option value="3">3</option>
                   </select>
                 </div>
+                <div class="flex-row">
+                  <label for="price">Price:</label>
+                  <input type="text" id="price" value="test One" disabled />
+                </div>
+                <div class="flex-row">
+                  <label for="date">Date:</label>
+                  <input type="text" id="date" disabled />
+                </div>
               </div>
-              <div class="stripe-info">
+              <div id="stripe-info" class="flex-col">
                 <div id="card-element">
                   <!--Stripe.js injects the Card Element-->
                 </div>
