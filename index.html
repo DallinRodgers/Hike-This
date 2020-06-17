@@ -94,7 +94,7 @@
           <div class="trips-title">
             <h2>Available Trips</h2>
           </div>
-          <div class="trip flex-row">
+          <div id="Mountain-Adventure" class="trip flex-row">
             <div class="trip-gallery flex-col gallery-MA">
               <a
                 href="./assets/img/mountain-adventure/moraine-lake-canada-2662086.jpg"
@@ -129,9 +129,37 @@
                 </p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia a nulla at sequi fugit eligendi quisquam ea beatae
-                  inventore, voluptas deserunt corrupti quos quidem id quae
-                  velit amet! Molestias, sapiente hic?
+                  Quisquam rerum aliquid hic, eos iusto temporibus doloremque
+                  voluptatum eum maiores sint explicabo unde, corporis animi
+                  beatae quis.
+                </p>
+                <div class="trip-details">
+                  <div class="trip-price">
+                    Price: $75.95 Per Person
+                  </div>
+                  <div class="trip-date">
+                    Date: 9-14-2020 to 9-15-2020
+                  </div>
+                  <div class="trip-difficulty">
+                    Difficulty: Beginner
+                  </div>
+                  <div class="trip-group-size">
+                    Group Size: 6-8 People
+                  </div>
+                </div>
+              </div>
+              <a href="#checkout" class="btn call-to-action">Book A Trip</a>
+            </div>
+          </div>
+          <div id="Water-Paradise" class="trip flex-row">
+            <div class="trip-info flex-col bg-green">
+              <div class="trip-title">
+                <h3>Waterfall Paradise</h3>
+              </div>
+              <div class="trip-description flex-col">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  placeat quia eius.
                 </p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -139,9 +167,156 @@
                   voluptatum eum maiores sint explicabo unde, corporis animi
                   beatae quis.
                 </p>
+                <div class="trip-details">
+                  <div class="trip-price">
+                    Price: $124.95 Per Person
+                  </div>
+                  <div class="trip-date">
+                    Date: 8-22-2020 to 8-25-2020
+                  </div>
+                  <div class="trip-difficulty">
+                    Difficulty: Intermediate
+                  </div>
+                  <div class="trip-group-size">
+                    Group Size: 4-5 People
+                  </div>
+                </div>
               </div>
-              <a href="#" class="btn call-to-action">Book A Trip</a>
+              <a href="#checkout" class="btn call-to-action">Book A Trip</a>
             </div>
+            <div class="trip-gallery flex-col gallery-WP">
+              <a
+                href="./assets/img/water-paradise/scenic-view-of-waterfalls-1598073.jpg"
+                class="view-gallery"
+                data-lightbox="WaterfallParadise"
+                >View Gallery</a
+              >
+              <a
+                href="./assets/img/water-paradise/water-rushing-on-rocks-2927226.jpg"
+                class="view-gallery"
+                data-lightbox="WaterfallParadise"
+              ></a>
+              <a
+                href="./assets/img/water-paradise/woman-sitting-beside-the-river-2661921.jpg"
+                class="view-gallery"
+                data-lightbox="WaterfallParadise"
+              ></a>
+            </div>
+          </div>
+          <div id="Southern Escape" class="trip flex-row">
+            <div class="trip-gallery flex-col gallery-SE">
+              <a
+                href="./assets/img/southern-escape/man-standing-on-arch-at-canyon-2440007.jpg"
+                class="view-gallery"
+                data-lightbox="SouthernEscape"
+                >View Gallery</a
+              >
+              <a
+                href="./assets/img/southern-escape/landscape-photography-of-mountains-946354.jpg"
+                class="view-gallery"
+                data-lightbox="SouthernEscape"
+              ></a>
+              <a
+                href="./assets/img/southern-escape/abstract-antelope-canyon-arid-art-342005.jpg"
+                class="view-gallery"
+                data-lightbox="SouthernEscape"
+              ></a>
+              <a
+                href="./assets/img/southern-escape/monument-valley-950210.jpg"
+                class="view-gallery"
+                data-lightbox="SouthernEscape"
+              ></a>
+            </div>
+            <div class="trip-info flex-col bg-green">
+              <div class="trip-title">
+                <h3>Southern Escape</h3>
+              </div>
+              <div class="trip-description flex-col">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  placeat quia eius.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam rerum aliquid hic, eos iusto temporibus doloremque
+                  voluptatum eum maiores sint explicabo unde, corporis animi
+                  beatae quis.
+                </p>
+                <div class="trip-details">
+                  <div class="trip-price">
+                    Price: $149.95 Per Person
+                  </div>
+                  <div class="trip-date">
+                    Date: 8-29-2020 to 9-2-2020
+                  </div>
+                  <div class="trip-difficulty">
+                    Difficulty: Advanced
+                  </div>
+                  <div class="trip-group-size">
+                    Group Size: 3-4 People
+                  </div>
+                </div>
+              </div>
+              <a href="#checkout" class="btn call-to-action">Book A Trip</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="checkout">
+        <div class="flex-col">
+          <div class="checkout-title">
+            <h2>Book A Trip</h2>
+          </div>
+          <div class="checkout-content">
+            <form id="payment-form" class="flex-row">
+              <div id="choose-trip" class="flex-col">
+                <div class="flex-row">
+                  <label for="pick-trip">Choose a Trip:</label>
+                  <select name="trip-picked" id="pick-trip">
+                    <option value="">--Please choose an option--</option>
+                    <option value="mountainAdventure"
+                      >Mountain Adventure</option
+                    >
+                    <option value="waterfallParadise"
+                      >Waterfall Paradise</option
+                    >
+                    <option value="southernEscape">Southern Escape</option>
+                  </select>
+                </div>
+                <div class="flex-row">
+                  <label for="price">Price:</label>
+                  <input type="text" id="price" disabled />
+                </div>
+                <div class="flex-row">
+                  <label for="date">Date:</label>
+                  <input type="text" id="date" disabled />
+                </div>
+                <div class="flex-row">
+                  <label for="group-size">Group Size:</label>
+                  <select name="group-size" id="group-size">
+                    <option value="">--Please choose an option--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="stripe-info">
+                <div id="card-element">
+                  <!--Stripe.js injects the Card Element-->
+                </div>
+                <button id="submit">
+                  <div class="spinner hidden" id="spinner"></div>
+                  <span id="button-text">Pay</span>
+                </button>
+                <p id="card-errors" role="alert"></p>
+                <p class="result-message hidden">
+                  Payment succeeded, see the result in your
+                  <a href="" target="_blank">Stripe dashboard.</a> Refresh the
+                  page to pay again.
+                </p>
+              </div>
+            </form>
           </div>
         </div>
       </section>
