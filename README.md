@@ -3,7 +3,7 @@
 WORK IN PROGRESS
 Technology Used HTML, CSS, JavaScript, lightbox, Stripe, Nodejs, Express
 
-View online: https://dallin-rodgers-minex.herokuapp.com/
+View online: https://dallinrodgers.github.io/Hike-This/
 
 Description:
 
@@ -11,8 +11,8 @@ The is a front end website a Hike/Mountain Climbing business called Hike This (f
 
 Still To Do:
 
-Build navbar
-Mobile Responsive
-Checkout Section for Stripe(front end)
-Footer
+Build navbar,
+Mobile Responsive,
+Checkout Section for Stripe(front end),
+Footer,
 Node.js for Stripe(back end)
